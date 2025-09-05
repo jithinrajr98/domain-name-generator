@@ -20,3 +20,4 @@ tinyllama_v3.zip
 .DS_Store
 model_fine_tuning.ipynb
 data/domain_dataset_v4.jsonl
+.gitignore
