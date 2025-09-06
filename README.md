@@ -27,23 +27,7 @@ This project implements a domain name generation system using QLoRA (Quantized L
 - **Edge Case Handling**: Robust testing across various business description types
 - **Production Ready**: Modular architecture with clear separation of concerns
 
-## Project Structure
 
-```
-├── data_generator.py          # Synthetic dataset generation
-├── fine_tuning.py            # QLoRA training pipeline
-├── domain_generator.py       # Trained model inference
-├── testing.py               # Comprehensive test framework
-├── evaluation/
-│   ├── domain_dataset_v1.jsonl  # 100 synthetic samples
-│   ├── domain_dataset_v2.jsonl  # 500 synthetic samples
-│   └── domain_dataset_v3.jsonl  # 290 LLM-generated samples
-├── models/
-│   ├── tinylamma_v1/        # Model 1 checkpoints
-│   ├── tinylamma_v2/        # Model 2 checkpoints
-│   └── tinylamma_v3/        # Model 3 checkpoints
-└── results/                 # Evaluation results and reports
-```
 
 ## Installation
 
