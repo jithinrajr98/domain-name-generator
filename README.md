@@ -69,7 +69,7 @@ from fine_tuning import DomainNameTrainer
 trainer = DomainNameTrainer("TinyLlama/TinyLlama-1.1B-Chat-v1.0")
 results = trainer.train(
     data_path="./data/domain_dataset_v1.jsonl",
-    output_dir="./models/tinylamma_v1"
+    output_dir="tinylamma_v1"
 )
 ```
 
@@ -79,7 +79,7 @@ from domain_generator import DomainNameGenerator
 
 generator = DomainNameGenerator(
     base_model_name="TinyLlama/TinyLlama-1.1B-Chat-v1.0",
-    adapter_path="./models/tinylamma_v3"
+    adapter_path="tinylamma_v3"
 )
 
 domains = generator.generate_domains("organic coffee shop in downtown area")
