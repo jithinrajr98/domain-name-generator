@@ -18,7 +18,7 @@ class LLMJudgeEvaluator:
         elif not api_key:
             raise ValueError("GROQ_API_KEY not found in Streamlit secrets or environment variables.")
         self.groq_client = Groq(api_key=self.api_key)  
-        self.GROQ_MODEL = "gemma2-9b-it" 
+        self.GROQ_MODEL = "llama-3.3-70b-versatile"	
         
     def evaluate_single_domain(self, domain: str, business_description: str) -> Dict[str, Any]:
         """Evaluate a single domain name"""
